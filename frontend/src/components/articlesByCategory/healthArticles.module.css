@@ -1,0 +1,15 @@
+/* healthArticles.module.css */
+
+.section_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.3em;
+    /* Add any other grid-related styles here */
+}
+
+@media (max-width: 800px) {
+    .section_grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}

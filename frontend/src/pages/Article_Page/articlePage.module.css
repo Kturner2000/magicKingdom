@@ -1,0 +1,30 @@
+.page {
+    max-width: 600px;
+}
+
+.page_header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete {
+    background-color: transparent;
+    border: none;
+}
+
+.page_title {
+    font-size: 2em;
+    width: 400px;
+}
+
+.page_content {
+    max-width: 600px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.96em;
+    line-height: 1.6rem;
+    color: #343131;
+}

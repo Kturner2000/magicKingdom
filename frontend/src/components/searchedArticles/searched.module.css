@@ -1,0 +1,21 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article_image {
+    object-fit: contain;
+    width: 25%;
+}
+
+a {
+    color: black;
+}
+
+@media (max-width: 740px) {
+    .article_image {
+        width: 30%;
+        margin: 20px;
+    }
+}

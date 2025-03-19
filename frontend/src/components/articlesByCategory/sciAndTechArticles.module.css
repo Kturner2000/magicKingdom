@@ -1,0 +1,38 @@
+/* sciAndTechSection.module.css */
+.techAndScienceSection {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.3em; /* Adjust gap as needed */
+}
+
+/* Optional: Define specific grid areas if needed for more control */
+.grid_item_1,
+.grid_item_2 {
+    grid-column: span 2;
+    
+}
+
+.banner_article {
+    grid-column: span 2;
+}
+
+
+
+.grid_item {
+    grid-column: span 1;
+}
+
+@media (max-width: 800px) {
+    .techAndScienceSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner_article {
+        height: 200px;
+        margin-bottom: 5%;
+    }
+    .section_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

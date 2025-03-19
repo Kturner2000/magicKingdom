@@ -1,0 +1,22 @@
+.article {
+    font-size: 0.5rem;
+    padding-bottom: 1.3em;
+}
+
+.article_title {
+    height: 20%;
+    margin-bottom: 0;
+    
+}
+
+.article_image_container {
+    height: 65%;
+    width: 100%;
+}
+
+.article_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

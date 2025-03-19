@@ -1,0 +1,46 @@
+.lifestyle_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.3em;
+    margin-bottom: 1.3em;
+}
+
+.banner_article {
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.502);
+    grid-column: 1 / 2;
+    position: relative;
+}
+
+.banner_text_container {
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.banner_text {
+    position: absolute;
+    margin: 0 1.3em;
+    bottom: 1.3em;
+    font-size: 0.75em;
+}
+
+.section_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1.3em;
+}
+
+@media (max-width: 800px) {
+    .lifestyle_section {
+        display: block;
+    }
+
+    .banner_article {
+        height: 200px;
+        margin-bottom: 5%;
+    }
+    .section_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
