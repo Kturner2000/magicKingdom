@@ -1,5 +1,5 @@
 const express = require("express");
-require("dotenv").config();
+require("dotenv").config({ path: '.local.env' });
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
