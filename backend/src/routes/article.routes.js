@@ -6,7 +6,7 @@ const {
     getArticlesByCategory,
     updateArticle,
     deleteArticle,
-} = require("../controllers/Article.controller");
+} = require("../controllers/article.controller");
 const protectRoute = require("../middleware/auth.middleware");
 const {
     requireWriterRole,
