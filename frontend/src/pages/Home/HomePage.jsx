@@ -32,6 +32,7 @@ export default function HomePage() {
     const bannerArticleBkg = bannerArticle?.mainImage ?? "defaultImageUrl";
     const sectionOneGrid = articles.slice(1, 5);
     const sectionTwoGrid = articles.slice(5, 9);
+    console.log(articles)
 
     return (
         <main className='page_container'>

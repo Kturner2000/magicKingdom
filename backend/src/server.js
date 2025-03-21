@@ -6,7 +6,7 @@ const connectDB = require("./lib/db.js");
 
 // Load environment variables only in development
 if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config({ path: '../../.local.env' }); // Verify this path
+    require('dotenv').config({ path: '../.local.env' }); // Verify this path
 }
 
 const app = express();

@@ -1,5 +1,6 @@
-require("dotenv").config();
-
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config({ path: './.local.env' });; // Verify this path
+}
 const mongoose = require("mongoose");
 
 async function connectDB() {
