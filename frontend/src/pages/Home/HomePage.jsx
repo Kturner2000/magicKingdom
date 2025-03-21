@@ -11,22 +11,22 @@ export default function HomePage() {
     const { getArticles, articles, isArticleLoading, error } =
         useArticleStore();
 
-    useEffect(() => {
-        getArticles();
-    }, []);
-
-    if (isArticleLoading) {
-        return <div>Loading...</div>;
-    }
-
-    // Check if articles array is empty
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
-
-    if (!articles || articles.length === 0) {
-        return <div>No articles found.</div>;
-    }
+    
+        useEffect(() => {
+            getArticles();
+        }, [getArticles]);
+    
+        if (isArticleLoading) {
+            return <div>Loading...</div>;
+        }
+    
+        if (error) {
+            return <div>Error: {error}</div>;
+        }
+    
+        if (!articles || articles.length === 0) {
+            return <div>No articles found.</div>;
+        }
 
     const bannerArticle = articles[0];
     const bannerArticleBkg = bannerArticle?.mainImage ?? "defaultImageUrl";
