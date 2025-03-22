@@ -47,13 +47,13 @@ export default function HomePage() {
                    
                 </div>
                 <div className={styles.section_one_grid}>
-                    {sectionOneGrid.map((article) => {
+                    {sectionOneGrid?.map((article) => {
                         return <Article key={article._id} article={article} />;
                     })}
                 </div>
             </div>
             <div className={styles.section_two}>
-                {sectionTwoGrid.map((article) => {
+                {sectionTwoGrid?.map((article) => {
                     return <Article key={article._id} article={article} />;
                 })}
             </div>
